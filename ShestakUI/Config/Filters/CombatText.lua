@@ -22,7 +22,8 @@ if C.combattext.merge_aoe_spam then
 	T.aoespam[222197] = 0			-- Volatile Ichor (Unstable Horrorslime Trinket)
 	T.aoespam[214350] = 3			-- Nightmare Essence (Oakheart's Gnarled Root Trinket)
 	T.aoespam[230261] = 0			-- Flame Wreath (Aran's Relaxing Ruby Trinket)
-	T.aoespam[221812] = 10			-- Plague Swarm (Swarming Plaguehive Trinket)
+	T.aoespam[221812] = 5			-- Plague Swarm (Swarming Plaguehive Trinket)
+	T.aoespam[222711] = 4			-- Poisoned Dreams (Bough of Corruption Trinket)
 	T.aoespam[188091] = 4			-- Deadly Grace (Potion of Deadly Grace)
 end
 
@@ -127,7 +128,7 @@ elseif T.class == "MAGE" then
 		T.aoespam[148022] = 3		-- Icicle (Mastery)
 		T.aoespam[31707] = 3		-- Waterbolt (Pet)
 		T.aoespam[228598] = 0.5		-- Ice Lance
-		T.aoespam[157981] = 1		-- Blast Wave
+		T.aoespam[157981] = 0		-- Blast Wave
 		T.aoespam[157997] = 1		-- Ice Nova
 		T.aoespam[157980] = 1		-- Supernova
 		T.aoespam[135029] = 3		-- Water Jet (Pet)
@@ -137,14 +138,16 @@ elseif T.class == "MAGE" then
 		T.aoespam[157977] = 0		-- Unstable Magic (Fire)
 		T.aoespam[157978] = 0		-- Unstable Magic (Frost)
 		T.aoespam[157979] = 0		-- Unstable Magic (Arcane)
-		T.aoespam[153564] = 3		-- Meteor
-		T.aoespam[155158] = 3		-- Meteor Burn
+		T.aoespam[153564] = 0		-- Meteor
+		T.aoespam[155158] = 4		-- Meteor Burn
 		T.aoespam[224637] = 1.6		-- Phoenix's Flames
 		T.aoespam[205345] = 4		-- Conflagration Flare Up
 		T.aoespam[226757] = 4		-- Conflagration
 		T.aoespam[198928] = 1.2		-- Cinderstorm
 		T.aoespam[194522] = 3		-- Blast Furnace
 		T.aoespam[194316] = 3		-- Cauterizing Blink
+		T.aoespam[235314] = 3		-- Blazing Barrier
+		T.aoespam[205472] = 4		-- Flame Patch
 		T.aoespam[88084] = 3		-- Arcane Blast (Mirror Image)
 		T.aoespam[59638] = 3		-- Frostbolt (Mirror Image)
 	end
@@ -216,7 +219,6 @@ elseif T.class == "PRIEST" then
 		T.aoespam[589] = 3			-- Shadow Word: Pain
 		T.aoespam[34914] = 3		-- Vampiric Touch
 		T.aoespam[15407] = 3		-- Mind Flay
-		T.aoespam[49821] = 3		-- Mind Sear
 		T.aoespam[14914] = 3		-- Holy Fire
 		T.aoespam[129250] = 3		-- Power Word: Solace
 		T.aoespam[120696] = 3		-- Halo
@@ -290,7 +292,6 @@ elseif T.class == "WARLOCK" then
 		T.aoespam[205246] = 3		-- Phantom Singularity
 		T.aoespam[80240] = 3		-- Havoc
 		T.aoespam[42223] = 3		-- Rain of Fire
-		--BETA T.aoespam[689] = 3			-- Drain Life
 		T.aoespam[198590] = 3		-- Drain Soul
 		T.aoespam[86040] = 3		-- Hand of Gul'dan
 		T.aoespam[205181] = 3		-- Shadowflame
@@ -311,7 +312,6 @@ elseif T.class == "WARLOCK" then
 	end
 	if C.combattext.healing then
 		T.healfilter[63106] = true	-- Siphon Life
-		--BETA T.healfilter[689] = true	-- Drain Life
 		T.healfilter[108359] = true	-- Dark Regeneration
 	end
 elseif T.class == "WARRIOR" then
@@ -337,6 +337,5 @@ elseif T.class == "WARRIOR" then
 	end
 	if C.combattext.healing then
 		T.healfilter[117313] = true	-- Bloodthirst Heal
-		--BETA T.healfilter[159363] = true	-- Blood Craze
 	end
 end
